@@ -1,0 +1,7 @@
+.lodaingDiv {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto !important;
+}

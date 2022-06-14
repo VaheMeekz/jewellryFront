@@ -1,0 +1,97 @@
+.aboutTitle {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+}
+
+.aboutTitle h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 149.88%;
+    color: #5D5D57;
+}
+
+.divImages {
+    width: 90%;
+    justify-content: space-around;
+    display: flex;
+    align-items: end;
+}
+
+.imageOne {
+    width: 50%;
+    object-fit: contain;
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+.imageTwoo {
+    width: 45%;
+    border-top-right-radius: 40%;
+}
+
+.divText p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 167.88%;
+    color: #5D5D57;
+}
+
+.divTextDown {
+    margin-top: 20%;
+}
+
+.divTextDown p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 167.88%;
+    color: #5D5D57;
+}
+
+.divDownMain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.divDownImageOne {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+
+.divDownImageOne img {
+    width: 100%;
+    border-top-left-radius: 30% !important;
+    object-fit: contain;
+}
+
+.imgOneUp {
+    border-top-right-radius: 30% !important;
+    object-fit: contain;
+    width: 80%;
+}
+
+.imgOneDown {
+    border-bottom-right-radius: 30% !important;
+    object-fit: cover;
+    width: 80%;
+}
+
+.divDownImage {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.divDownImage img {
+    margin: 1rem 0;
+}

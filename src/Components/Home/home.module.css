@@ -1,0 +1,386 @@
+.briliant {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #B28F53;
+    border-bottom: 2px solid #B28F53;
+    padding: 5px 0;
+}
+
+.briliant h3 {
+    margin: 0 2.5rem;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 167.88%;
+    color: #856228;
+}
+
+.mataniDivs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mataniDivs img {
+   width: 80%;
+   height: 80%;
+   object-fit: contain;
+}
+
+.mataniDivs div {
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+.divTextMatani {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin-left: 5rem;
+    align-items: center;
+}
+
+.mataniText {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.mataniText h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 149.88%;
+    color: #5D5D57;
+}
+
+.mataniText p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 167.88%;
+    color: #5D5D57;
+}
+
+.mataniText button {
+    background: #B28F53;
+    border-radius: 6px;
+    border: none;
+    padding: 8px 20px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 167.88%;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.mataniText button a {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 167.88%;
+    color: #FFFFFF;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.mataniText button:hover {
+    background: #d3b886;
+    border-radius: 6px;
+    border: none;
+    padding: 8px 20px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 167.88%;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.divModal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divModal svg {
+    font-size: 50px;
+}
+
+.divModal svg path {
+    fill: green !important;
+}
+
+.sliderDiv {
+    width: 100%;
+    display: flex !important;
+}
+
+.divNewProduct {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divNewProduct div {
+    text-align: center;
+}
+
+.divNewProduct div h3 {
+    font-family: 'Quattrocento';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 149.88%;
+    color: #856228;
+}
+
+.divNewProduct img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.mainDivBg {
+    padding: 5rem 0;
+}
+
+.mainDivBg h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 149.88%;
+    color: #FFFFFF;
+}
+
+.mainDivBg p {
+    width: 50rem;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 167.88%;
+    color: #FFFFFF;
+}
+
+.mainDivBg button {
+    border: none;
+    background: #B28F53;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 167.88%;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.mainDivBg button a {
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 167.88%;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.mainDivBg button:hover {
+    border: none;
+    background: #B28F53;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 167.88%;
+    color: #FFFFFF;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.newsletter {
+    width: 100%;
+    border-top: 2px solid #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.newsletter div {
+    text-align: center;
+}
+
+.newsletter div h3 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 185.88%;
+    letter-spacing: 0.075em;
+    color: #000000;
+}
+
+.newsletter div p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 185.88%;
+    letter-spacing: 0.075em;
+    color: #5D5D57;
+}
+
+.newsletter div div {
+    position: relative;
+    width: 100%;
+}
+
+.newsletter div div input {
+    width: 100% !important;
+    padding: 0.7rem 0;
+    border-radius: 4px;
+    border: 2px solid #C4C4C4;
+    text-indent: 10px;
+}
+
+.newsletter div div button {
+    position: absolute;
+    right: 1rem;
+    top: 15%;
+    border: none;
+    padding: 3px 20px;
+    background: #B28F53;
+    border-radius: 4px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 185.88%;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.newsletter div div button:hover {
+    position: absolute;
+    right: 1rem;
+    top: 15%;
+    border: none;
+    padding: 3px 20px;
+    background: #d5b780;
+    border-radius: 4px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 185.88%;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.brMian {
+    width: 100%;
+}
+
+@media(max-width: 1000px) {
+
+    .mataniText p {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 167.88%;
+        color: #5D5D57;
+    }
+
+    .divTextMatani {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .mainDivBg p {
+        width: 100%;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 167.88%;
+        color: #FFFFFF;
+    }
+}
+
+
+@media(max-width: 650px) {
+
+    .newsletter {
+        width: 80%;
+        border-top: 2px solid #C4C4C4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+        margin: 0 auto;
+    }
+
+    .mainDivBg {
+        padding: 2rem 0;
+    }
+
+    .divTextMatani {
+        display: none;
+    }
+
+    .mataniDivs div {
+        display: none;
+    }
+
+    .mainDivBg p {
+        width: 100%;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 167.88%;
+        color: #FFFFFF;
+    }
+
+    .divNewProduct div h3 {
+        font-family: 'Quattrocento';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 149.88%;
+        color: #856228;
+    }
+
+    .divNewProduct img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+}

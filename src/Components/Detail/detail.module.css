@@ -1,0 +1,214 @@
+.divImageMain {
+    width: 100%;
+}
+
+.divImageMain img {
+    width: 80%;
+    height: 40vh;
+    object-fit: contain;
+}
+
+.divImages {
+    width: 80%;
+    height: 100%;
+    display: flex !important;
+    margin: 1rem 0;
+}
+
+.divImages img {
+    width: 20%;
+    height: 20%;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0 0.8rem;
+}
+
+.divImages img:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+    width: 20%;
+    height: 20%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.detailDescription {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.detailDescription div h1 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 179.38%;
+    color: #000000;
+}
+
+.detailDescription div p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 179.38%;
+    color: #5D5D57;
+}
+
+.detailDescription div div {
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 6px;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.detailDescription div div span {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 179.38%;
+    color: #000000;
+    margin-right: 1.2rem;
+}
+
+.detailDescription div div img {
+    font-size: 20px;
+    margin: 0 0.5rem;
+}
+
+.divModal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divModal svg {
+    font-size: 50px;
+}
+
+.divModal svg path {
+    fill: green !important;
+}
+
+.divVideo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10rem 0;
+    height: 100%;
+}
+
+.divVideo iframe {
+    width: 55%;
+    height: 60vh;
+}
+
+.formMain {
+    width: 100%;
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.formMain h1 {
+    text-align: start !important;
+    display: flex !important;
+    align-items: start !important;
+    justify-content: start !important;
+    width: 92% !important;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 179.38%;
+    color: #000000;
+}
+
+.formMain div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.formMain div div {
+    display: flex;
+    align-items: center;
+}
+
+
+.formMain div div input {
+    width: 85%;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #C4C4C4;
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    padding: 10px 0;
+    text-indent: 10px;
+}
+
+.inpRew {
+    width: 92%;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #C4C4C4;
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    padding: 0.5rem 0 8rem 0;
+    text-indent: 10px;
+}
+
+.btnDiv {
+    width: 92% !important;
+    display: flex !important;
+    justify-content: start !important;
+    align-items: start !important;
+}
+
+.btnDiv button {
+    border: none;
+    background: linear-gradient(0deg, #856228, #856228), #C4C4C4;
+    border-radius: 4px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 179.38%;
+    color: #FFFFFF;
+    padding: 3px 50px;
+    transition: 0.5s;
+}
+
+.btnDiv button:hover {
+    border: none;
+    background: linear-gradient(0deg, #856228, #856228), #C4C4C4;
+    border-radius: 4px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 179.38%;
+    color: #FFFFFF;
+    padding: 3px 50px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.formMain div div {
+    position: relative;
+}
+
+.error {
+    position: absolute;
+    right: 10%;
+    color: red;
+    font-size: 22px;
+}

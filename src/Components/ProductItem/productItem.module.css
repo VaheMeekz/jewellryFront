@@ -1,0 +1,84 @@
+.itemDiv {
+    background: rgba(196, 196, 196, 0.15);
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.itemDiv div {
+    width: 100%;
+    height: 100%;
+}
+
+.itemDiv div img {
+    width: 80%;
+    height: 25vh;
+    object-fit: contain;
+}
+
+.itemDiv div p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167.88%;
+    color: #444345;
+    margin-top: 1rem;
+}
+
+.itemDiv div h3 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 167.88%;
+    color: #000000;
+}
+
+.itemDiv div button {
+    background: #B28F53;
+    border-radius: 6px;
+    border: none;
+    padding: 8px 25px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 167.88%;
+    color: #FFFFFF;
+    margin-top: 0.5rem;
+    transition: 0.5s;
+}
+
+.itemDiv div button:hover {
+    background: #B28F53;
+    border-radius: 6px;
+    border: none;
+    padding: 8px 25px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 167.88%;
+    color: #FFFFFF;
+    margin-top: 0.5rem;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.itemDiv div button a {
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 167.88%;
+    color: #FFFFFF;
+    margin-top: 0.5rem;
+    transition: 0.5s;
+}

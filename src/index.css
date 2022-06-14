@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar-brand {
+  color: black !important;
+}
+
+.navbar-toggler {
+  color: black !important;
+  background: black !important;
+}
+
+.navbar-toggler span {
+  color: black !important;
+}
+
+.navbar-nav a {
+  text-decoration: none !important;
+  margin: 0 1rem !important;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.slick-dots li button:before {
+  font-size: 5px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 19px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: #000;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -40px !important;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.carousel-indicators button {
+  margin: 0 1rem;
+  width: 6.5rem !important;
+  height: 7px !important;
+  padding: 0 !important;
+  background: #C4C4C4 !important;
+  border-radius: 10px !important;
+  border: 2px solid transparent !important;
+}
+
+.carousel-indicators .active {
+  background: #E8D6B8 !important;
+  border-radius: 10px !important;
+}
+
+.slick-initialized {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.btn {
+  background: green !important;
+  border: none;
+}
+
+.btn:hover {
+  background: green !important;
+  border: none;
+  opacity: 0.5;
+}
+
+.carousel-control-prev {
+  display: none !important;
+}
+
+.carousel-control-next {
+  display: none !important;
+}
+
+.pagBox {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  margin: 3rem 0;
+  align-items: center;
+}
+
+.pagBox div span {
+  margin: 0 5px;
+  padding: 8px 15px;
+  border-radius: 2px;
+  background: #B28F53;
+  cursor: pointer;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.pagBox div span:hover {
+  margin: 0 5px;
+  padding: 8px 15px;
+  border-radius: 2px;
+  background: #B28F53;
+  cursor: pointer;
+  opacity: 0.5;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.ActivePagItem {
+  opacity: 0.5;
+}
+
+.btnArrow {
+  background: none;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media(max-width: 650px) {
+  .navbar-nav a {
+    text-decoration: none !important;
+    margin: 0 !important;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+  }
+}

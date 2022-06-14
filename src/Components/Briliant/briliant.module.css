@@ -1,0 +1,34 @@
+.briliant {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #B28F53;
+    border-bottom: 2px solid #B28F53;
+    padding: 5px 0;
+    margin: 2rem 0;
+}
+
+.briliant h3 {
+    margin: 0 2.5rem;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 167.88%;
+    color: #856228;
+}
+
+@media(max-width: 650px) {
+    .briliant {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 2px solid #B28F53;
+        border-bottom: 2px solid #B28F53;
+        padding: 5px 0;
+        margin: 2rem 0;
+        text-align: center;
+    }
+}

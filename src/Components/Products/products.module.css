@@ -1,0 +1,76 @@
+.productTitle {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #C4C4C4;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.productTitle h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 149.88%;
+    color: #5D5D57;
+}
+
+.filterDiv {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #B28F53;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.active {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #B28F53;
+    background: #B28F53;
+    border-radius: 4px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.filterDiv:hover {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #B28F53;
+    background: #B28F53;
+    border-radius: 4px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.active h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.filterDiv h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.border {
+    border-top: 2px solid #C4C4C4;
+    margin: 2rem 0;
+}

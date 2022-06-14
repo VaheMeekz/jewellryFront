@@ -1,0 +1,91 @@
+.sliderSlid {
+    width: 100% !important;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    max-width: 100% !important;
+}
+
+.divSLider {
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100%;
+}
+
+.divSLiderLength {
+    width: 25%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100%;
+}
+
+.divSLiderLength div {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: rgba(196, 196, 196, 0.15);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.divLengthFlex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divSLider div {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: rgba(196, 196, 196, 0.15);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.divSLider div h3 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 167.88%;
+    color: #000000;
+}
+
+.divSLider div img {
+    width: 100%;
+    height: 10rem;
+    object-fit: contain !important;
+}
+
+.slide_arrow {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.slide_arrow:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media(max-width: 550px) {
+    .divSLider div img {
+        width: 100%;
+        height: 75%;
+        object-fit: contain !important;
+    }
+
+    .divSLider {
+        width: 100%;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        height: 50vh;
+        margin: 0.5rem 0;
+    }
+}

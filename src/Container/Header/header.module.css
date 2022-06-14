@@ -1,0 +1,44 @@
+.mainDiv {
+    padding: 1rem 0;
+}
+
+.linkMian {
+    font-family: 'Roboto Slab' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: 26px !important;
+    color: #856228 !important;
+}
+
+.selectMain {
+    border: none !important;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.selectMain:hover {
+    cursor: pointer !important;
+}
+
+.selectMain:focus {
+    border: none !important;
+}
+
+.selectMain option {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.borderMain {
+    border-left: 1px solid black;
+    margin: 0 1rem;
+}

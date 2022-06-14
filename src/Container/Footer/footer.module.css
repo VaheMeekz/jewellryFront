@@ -1,0 +1,46 @@
+.footerMain {
+    width: 100%;
+    border-top: 2px solid #C4C4C4;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footOne {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.divMainFooter div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.divMainFooter div div a {
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #444345;
+    margin: 0.5rem 0;
+}
+
+@media(max-width: 1000px) {
+    .footerMain {
+        margin-left: 3rem;
+    }
+}
+
+.armCodingBox{
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
