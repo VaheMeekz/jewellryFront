@@ -12,7 +12,8 @@ import axios from "axios";
 import {backUrl} from "../../Config/keys";
 import {BsFillCheckCircleFill} from "react-icons/bs";
 import {useTranslation} from "react-i18next";
-
+import ReactPlayer from "react-player"
+import playBtn from "../../Images/playBtn.png"
 const Detail = () => {
     const {t} = useTranslation()
     const [modalShow, setModalShow] = React.useState(false);
@@ -60,7 +61,11 @@ const Detail = () => {
         );
     }
 
-
+    const styles = {
+        player: {
+            width: '800px',
+        },
+    }
     return (
         <div>
             <Container>
@@ -102,10 +107,13 @@ const Detail = () => {
                     </Col>
                     <Col lg={12} xs={12} md={12}>
                         <div className={css.divVideo}>
-                            <iframe width="560" height="315" src={productDataDetail.video}
-                                    title="YouTube video player" frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen></iframe>
+                            {/*<iframe width="560" height="315" src={productDataDetail.video}*/}
+                            {/*        title="YouTube video player" frameBorder="0"*/}
+                            {/*        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
+                            {/*        allowFullScreen></iframe>*/}
+                            <div className={css.video_slice} style={{display:"flex",justifyContent:"center",width:"100%"}}>
+                                <ReactPlayer url={productDataDetail.video} style={{display:"flex",justifyContent:"center"}} height={'315px'} playIcon={playBtn}  width={'100%'}/>
+                            </div>
                         </div>
                     </Col>
                     <Col lg={12} xs={12} md={12}>
