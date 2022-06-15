@@ -63,7 +63,7 @@ const Home = () => {
             <Container>
                 <Briliant/>
                 <Row className='mt-3'>
-                    <Carousel>
+                    <Carousel interval={1000} pause={"hover"}>
                         {
                             homeBannerDataMain?.map((item) => {
                                 return (
