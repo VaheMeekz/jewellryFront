@@ -3,7 +3,6 @@ import css from './homeSlider.module.css';
 import Slider from "react-slick";
 import ArrowLeft from '../../../Images/arrowSliderLeft.png';
 import ArrowRigth from '../../../Images/arrowSliderRigth.png';
-import { Col } from 'react-bootstrap';
 
 const HomeSlider = ({sliderDataMain}) => {
 
@@ -27,7 +26,7 @@ const HomeSlider = ({sliderDataMain}) => {
 
     let settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -65,7 +64,7 @@ const HomeSlider = ({sliderDataMain}) => {
                                                 <h3>{ localStorage.getItem("lang") == "am"&& item.nameHy}</h3>
                                                 <h3>{ localStorage.getItem("lang") == "ru" && item.nameRu}</h3>
                                                 <h3>{ localStorage.getItem("lang") == "en" && item.nameEn}</h3>
-                                                <img src={item.ProductImages[0]?.image} alt="image"/>
+                                                <img src={item.image} alt="image"/>
                                             </div>
                                         </div>
                                 )
@@ -80,7 +79,7 @@ const HomeSlider = ({sliderDataMain}) => {
                                             <h3>{ localStorage.getItem("lang") == "am"&& item.nameHy}</h3>
                                             <h3>{ localStorage.getItem("lang") == "ru" && item.nameRu}</h3>
                                             <h3>{ localStorage.getItem("lang") == "en" && item.nameEn}</h3>
-                                            <img src={item.ProductImages[0]?.image} alt=""/>
+                                            {/*<img src={item.ProductImages[0]?.image} alt=""/>*/}
                                         </div>
                                     </div>
                             )

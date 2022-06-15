@@ -7,7 +7,7 @@ import {shallowEqual, useDispatch, useSelector} from "react-redux";
 import NewProduct from "./NewProduct";
 import Briliant from "../Briliant";
 import BriliantBg from "../BriliantBg";
-import {productSlider_get} from "../../Redux/Actions/product.action";
+import {product_category_get, productSlider_get} from "../../Redux/Actions/product.action";
 import {home_slider_get} from "../../Redux/Actions/home.action";
 import {Formik} from "formik";
 import axios from "axios";
@@ -22,12 +22,13 @@ const Home = () => {
 
     const sliderDataMain = useSelector(state => state.productReducer.productSlider, shallowEqual);
     const homeBannerDataMain = useSelector(state => state.homeReducer.homeBanner, shallowEqual);
-
+    const categories = useSelector(state => state.productReducer.categories)
     const dispatch = useDispatch();
     const {t} = useTranslation()
     useEffect(() => {
         dispatch(productSlider_get())
         dispatch(home_slider_get())
+        dispatch(product_category_get())
         console.clear()
     }, []);
 
@@ -70,7 +71,7 @@ const Home = () => {
                                         <div className={css.sliderDiv} key={item.id}>
                                             <Col lg={5} md={6} xs={12}>
                                                 <div className={css.mataniDivs}>
-                                                    <img src={item.image} alt=""/>
+                                                    <img src={item.image} alt="image"/>
                                                 </div>
                                             </Col>
                                             <Col lg={6} xs={12} md={6}>
@@ -96,19 +97,30 @@ const Home = () => {
                         }
                     </Carousel>
                 </Row>
-                <Row>
-                    <HomeSlider sliderDataMain={sliderDataMain}/>
+                <Row className={`${css.homeBox} justify-content-md-center`}>
+                    <Col lg={12} md={12} xs={12}>`
+                        <div className={css.divNewProduct}>
+                            <div>
+                                <h3>{t("colections")}</h3>
+                                <img src={Brialiant} alt="image"/>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col>
+                    <HomeSlider sliderDataMain={categories}/>
+                    </Col>
                 </Row>
                 <Row className="justify-content-md-center">
                     <Col lg={12} md={12} xs={12}>`
                         <div className={css.divNewProduct}>
                             <div>
                                 <h3>{t("newProducts")}</h3>
-                                <img src={Brialiant} alt=""/>
+                                <img src={Brialiant} alt="image"/>
                             </div>
                         </div>
                     </Col>
-                    <NewProduct/>
+                    <NewProduct data={sliderDataMain}/>
+
                 </Row>
             </Container>
             <div className={css.brMian}>

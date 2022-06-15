@@ -384,3 +384,7 @@
         object-fit: contain;
     }
 }
+
+.homeBox{
+    padding: 20px 0;
+}

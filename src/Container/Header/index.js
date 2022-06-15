@@ -24,7 +24,7 @@ const Header = () => {
     return (<div className={css.mainDiv}>
             <Navbar collapseOnSelect expand="lg" variant="dark" expanded={closeNav}>
                 <Container>
-                    <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="/">Jewelery</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => {
                         setCloseNav(closeNav ? false : "closeNav")
                     }}/>
