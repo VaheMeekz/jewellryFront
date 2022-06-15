@@ -5,7 +5,6 @@ import {useDispatch, useSelector} from "react-redux";
 import {detailAction} from "../../Redux/Actions/product.action";
 import {Button, Col, Container, Modal, Row} from "react-bootstrap";
 import FbSvg from '../../Images/facebookSvg.svg';
-import InstaSvg from '../../Images/instaSvg.svg';
 import {Formik} from "formik";
 import BriliantBg from "../BriliantBg";
 import axios from "axios";
@@ -14,6 +13,7 @@ import {BsFillCheckCircleFill} from "react-icons/bs";
 import {useTranslation} from "react-i18next";
 import ReactPlayer from "react-player"
 import playBtn from "../../Images/playBtn.png"
+import { FacebookShareButton } from "react-share";
 const Detail = () => {
     const {t} = useTranslation()
     const [modalShow, setModalShow] = React.useState(false);
@@ -99,8 +99,16 @@ const Detail = () => {
                                 <p>{localStorage.getItem("lang") == "en" && productDataDetail.descriptionEn}</p>
                                 <div>
                                     <span>Share:</span>
-                                    <img src={FbSvg} alt=""/>
-                                    <img src={InstaSvg} alt=""/>
+                                    <FacebookShareButton
+                                        url={"https://peing.net/ja/"}
+                                        quote={"フェイスブックはタイトルが付けれるようです"}
+                                        hashtag={"#hashtag"}
+                                        description={"aiueo"}
+                                        className="Demo__some-network__share-button"
+                                    >
+                                        <img src={FbSvg} alt="image"/>
+                                    </FacebookShareButton>
+
                                 </div>
                             </div>
                         </div>

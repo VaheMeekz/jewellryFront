@@ -7,9 +7,10 @@ import {IoIosArrowForward} from 'react-icons/io';
 import { product_get} from "../../../Redux/Actions/product.action";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
-
+import {useNavigate} from "react-router-dom"
 const NewProduct = ({data}) => {
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     const {t} = useTranslation()
     useEffect(() => {
         dispatch(product_get())
@@ -20,8 +21,10 @@ const NewProduct = ({data}) => {
             {
                 data && data?.map((item) => {
                     return (
-                        <Col lg={3} md={6} xs={12} key={item.id}>
-                            <div className={css.main}>
+                        <Col lg={3} md={6} xs={12} key={item.id} onClick={()=>navigate(`/products/${item.id}`)} style={{
+                            cursor:"pointer"
+                        }}>
+                            <div className={css.main} >
                                 <div className={css.divMain}>
                                     <div>
                                         <h3>{localStorage.getItem("lang") == "am" && item.nameHy}</h3>
