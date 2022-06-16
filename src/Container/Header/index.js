@@ -4,7 +4,7 @@ import {Container, Nav, Navbar} from "react-bootstrap";
 import {Link, useLocation, useParams} from "react-router-dom";
 import Languages from "./Languages";
 import {useTranslation} from "react-i18next";
-
+import logo from "../../Images/logo.png"
 const Header = () => {
     const [closeNav, setCloseNav] = useState(false)
     const {t} = useTranslation()
@@ -24,7 +24,11 @@ const Header = () => {
     return (<div className={css.mainDiv}>
             <Navbar collapseOnSelect expand="lg" variant="dark" expanded={closeNav}>
                 <Container>
-                    <Navbar.Brand href="/">Jewelery</Navbar.Brand>
+                    <Navbar.Brand href="/">
+                        <img src={logo} alt="logo" style={{
+                            width:"50px"
+                        }}/>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => {
                         setCloseNav(closeNav ? false : "closeNav")
                     }}/>

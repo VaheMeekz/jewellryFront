@@ -56,6 +56,7 @@ const Footer = () => {
                                 <div>
                                     <div>
                                         <Link to={'/products'}>{t("products")}</Link>
+                                        <Link to={'/portfolio'}>{t("portfolio")}</Link>
                                     </div>
                                 </div>
                             </div>

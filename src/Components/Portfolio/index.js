@@ -16,7 +16,7 @@ const Portfolio = () => {
     const count = useSelector(state => state.portfolioReducer.count);
     const videoImg = useSelector(state => state.portfolioReducer.videoImg);
 
-    const limit = 6;
+    const limit = 7;
 
     const dispatch = useDispatch();
 
@@ -42,13 +42,6 @@ const Portfolio = () => {
                                 <Col lg={4} md={6} xs={12} key={item.id}>
                                     <div className={css.videoDiv}>
                                         <ReactPlayer url={item.video}/>
-                                        {/*<iframe*/}
-                                        {/*    src={item.video}*/}
-                                        {/*    frameBorder="0"*/}
-                                        {/*    allow="autoplay; encrypted-media"*/}
-                                        {/*    allowFullScreen*/}
-                                        {/*    title="video"*/}
-                                        {/*/>*/}
                                     </div>
                                 </Col>
                             )
@@ -69,13 +62,6 @@ const Portfolio = () => {
                                 <Col lg={6} md={6} xs={12} key={item.id}>
                                     <div className={css.videoDiv2}>
                                         <ReactPlayer url={item.video}/>
-                                        {/*<iframe*/}
-                                        {/*    src={item.video}*/}
-                                        {/*    frameBorder="0"*/}
-                                        {/*    allow="autoplay; encrypted-media"*/}
-                                        {/*    allowFullScreen*/}
-                                        {/*    title="video"*/}
-                                        {/*/>*/}
                                     </div>
                                 </Col>
                             )

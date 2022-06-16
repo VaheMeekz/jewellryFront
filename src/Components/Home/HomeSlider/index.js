@@ -3,9 +3,10 @@ import css from './homeSlider.module.css';
 import Slider from "react-slick";
 import ArrowLeft from '../../../Images/arrowSliderLeft.png';
 import ArrowRigth from '../../../Images/arrowSliderRigth.png';
+import {useNavigate} from "react-router-dom";
 
 const HomeSlider = ({sliderDataMain}) => {
-
+    const navigate = useNavigate()
     const NextArrow = (props) => {
         const {onClick} = props;
         return (
@@ -59,7 +60,7 @@ const HomeSlider = ({sliderDataMain}) => {
                         {
                             sliderDataMain?.map((item) => {
                                 return (
-                                        <div key={item.id} className={css.divSLider}>
+                                        <div key={item.id} className={css.divSLider} onClick={()=>navigate('/products')}>
                                             <div>
                                                 <h3>{ localStorage.getItem("lang") == "am"&& item.nameHy}</h3>
                                                 <h3>{ localStorage.getItem("lang") == "ru" && item.nameRu}</h3>
