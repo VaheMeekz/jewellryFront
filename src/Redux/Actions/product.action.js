@@ -1,12 +1,9 @@
 import {
-    NEW_PRODUCT_GET,
     PRODUCT_CATEGORY_GET,
     PRODUCT_DETAIL_GET,
-    PRODUCT_FILTER_GET,
     PRODUCT_GET,
     PRODUCT_SLIDER
 } from "../types";
-import {newProductData, productSliderData} from "../Utils/productSLiderUtils";
 import  axios  from 'axios';
 import {backUrl} from "../../Config/keys";
 
@@ -46,28 +43,6 @@ export const productSlider_get = (id) => {
             })
     }
 }
-
-export const newProduct_get = () => {
-    return dispatch => {
-        dispatch({type: NEW_PRODUCT_GET, payload: newProductData})
-    }
-}
-
-// export const filterAction = (name) => {
-//     return dispatch => {
-//         axios.get('/user', {
-//             firstName: 'Fred',
-//             lastName: 'Flintstone'
-//         })
-//             .then(function (response) {
-//                 console.log(response);
-//             })
-//             .catch(function (error) {
-//                 console.log(error);
-//             });
-//         dispatch({type: PRODUCT_FILTER_GET, payload: name})
-//     }
-// }
 
 export const detailAction = (id) => {
     return dispatch => {

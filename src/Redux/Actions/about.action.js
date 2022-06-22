@@ -1,5 +1,4 @@
 import {ABOUT_DOWN_GET, ABOUT_UP_GET} from "../types";
-import {aboutUpData, aboutUpDown} from "../Utils/aboutUtils";
 import axios from "axios";
 import {backUrl} from "../../Config/keys";
 

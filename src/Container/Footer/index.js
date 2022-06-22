@@ -62,19 +62,6 @@ const Footer = () => {
                             </div>
                         </div>
                     </Col>
-                    {/*<Col lg={2} md={6} xs={12}>*/}
-                    {/*    <div className={css.footOne}>*/}
-                    {/*        <div className={css.divMainFooter}>*/}
-                    {/*            <h4>Lorem</h4>*/}
-                    {/*            <div>*/}
-                    {/*                <div>*/}
-                    {/*                    <Link to={'/about'}>About us</Link>*/}
-                    {/*                    <Link to={'/contact'}>Contact us</Link>*/}
-                    {/*                </div>*/}
-                    {/*            </div>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*</Col>*/}
                     <Col lg={2} md={12} xs={12}>
                         <div className={css.footOne}>
                             <div className={css.divMainFooter}>

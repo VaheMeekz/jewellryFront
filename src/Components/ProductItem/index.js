@@ -10,7 +10,7 @@ const ProductItem = ({item}) => {
         <Col lg={3} md={6} xs={12} className='mt-4'>
             <div className={css.itemDiv}>
                 <div>
-                    <img src={item.ProductImages[0]?.image} alt=""/>
+                    <img src={item.ProductImages[0]?.image} alt="image"/>
                     <p>{localStorage.getItem("lang") == "am" && item.Category?.nameHy}</p>
                     <p>{localStorage.getItem("lang") == "ru" && item.Category?.nameRu}</p>
                     <p>{localStorage.getItem("lang") == "en" && item.Category?.nameEn}</p>

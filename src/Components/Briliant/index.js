@@ -12,9 +12,9 @@ const Briliant = () => {
                 <Row>
                     <Col lg={12} xs={12} md={12}>
                         <div className={css.briliant}>
-                            <img src={Brialiant} alt=""/>
+                            <img src={Brialiant} alt="image"/>
                             <h3>{t("delivery")}</h3>
-                            <img src={Brialiant} alt=""/>
+                            <img src={Brialiant} alt="image"/>
                         </div>
                     </Col>
                 </Row>

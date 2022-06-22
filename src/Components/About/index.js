@@ -1,13 +1,11 @@
 import React, {useEffect} from 'react';
 import css from './about.module.css';
 import {useDispatch, useSelector} from "react-redux";
-import {aboutReducer} from "../../Redux/Reducers/aboutReducer";
 import {aboutDown_get, aboutUp_get} from "../../Redux/Actions/about.action";
 import {Col, Container, Row} from "react-bootstrap";
 import Briliant from "../Briliant";
 import BriliantBg from "../BriliantBg";
 import {useTranslation} from "react-i18next";
-import {language} from "../../Config/keys";
 
 const About = () => {
 

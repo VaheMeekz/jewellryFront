@@ -20,19 +20,6 @@ const Languages = () => {
 
     return (
         <div>
-        {/*<ul className='languages'>*/}
-        {/*    {*/}
-        {/*        languages.filter(i => i.id !== currentId).map(({id, lang}) => {*/}
-        {/*            return <li*/}
-        {/*                key={id}*/}
-        {/*                onClick={() => selectlanguages(lang, id)}*/}
-        {/*                className={lang === activeLang ? 'language active' : 'language'}*/}
-        {/*            >*/}
-        {/*                {lang.toUpperCase()}*/}
-        {/*            </li>*/}
-        {/*        })*/}
-        {/*    }*/}
-        {/*</ul>*/}
             <select onChange={e=>selectlanguages(e.target.value)} className={css.selectMain}>
                 {
                     languages.map(({id, lang}) => {

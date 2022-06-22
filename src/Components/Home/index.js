@@ -120,7 +120,6 @@ const Home = () => {
                         </div>
                     </Col>
                     <NewProduct data={sliderDataMain}/>
-
                 </Row>
             </Container>
             <div className={css.brMian}>

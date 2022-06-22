@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import ArrowLeft from '../../../Images/arrowSliderLeft.png';
 import ArrowRigth from '../../../Images/arrowSliderRigth.png';
 import {useNavigate} from "react-router-dom";
-
 const HomeSlider = ({sliderDataMain}) => {
     const navigate = useNavigate()
     const NextArrow = (props) => {
@@ -24,11 +23,10 @@ const HomeSlider = ({sliderDataMain}) => {
             </div>
         );
     };
-
     let settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 2000,
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
@@ -80,7 +78,6 @@ const HomeSlider = ({sliderDataMain}) => {
                                             <h3>{ localStorage.getItem("lang") == "am"&& item.nameHy}</h3>
                                             <h3>{ localStorage.getItem("lang") == "ru" && item.nameRu}</h3>
                                             <h3>{ localStorage.getItem("lang") == "en" && item.nameEn}</h3>
-                                            {/*<img src={item.ProductImages[0]?.image} alt=""/>*/}
                                         </div>
                                     </div>
                             )

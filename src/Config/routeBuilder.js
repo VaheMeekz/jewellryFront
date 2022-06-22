@@ -1,4 +1,4 @@
-import React, {Component, memo, Suspense} from 'react';
+import React, {Component, Suspense} from 'react';
 import {Route, Routes} from 'react-router-dom';
 import Layout from "../Layout";
 import routesMain from "./index";

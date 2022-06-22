@@ -12,18 +12,14 @@ import {useTranslation} from "react-i18next";
 
 const Products = () => {
     const {t} = useTranslation()
+    const dispatch = useDispatch();
+    const limit = 8;
     const [idMain, setIdMain] = useState();
     const [page, setPage] = useState(0);
     const [pages, setPages] = useState([]);
-
     const productData = useSelector(state => state.productReducer.products);
-    const filterDataMain = useSelector(state => state.productReducer.filtersItem);
     const categoriesDataMain = useSelector(state => state.productReducer.categories);
     const count = useSelector(state => state.productReducer.count);
-
-    const limit = 8;
-
-    const dispatch = useDispatch();
 
     useEffect(() => {
         if (count) {

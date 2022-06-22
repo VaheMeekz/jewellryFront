@@ -12,28 +12,23 @@ import {backUrl} from "../../Config/keys";
 import {BsFillCheckCircleFill} from "react-icons/bs";
 import {useTranslation} from "react-i18next";
 import ReactPlayer from "react-player"
-import playBtn from "../../Images/playBtn.png"
-import { FacebookShareButton } from "react-share";
+import {FacebookShareButton} from "react-share";
+
 const Detail = () => {
     const {t} = useTranslation()
+    let {id} = useParams();
+    const dispatch = useDispatch();
     const [modalShow, setModalShow] = React.useState(false);
-
     const productDataDetail = useSelector(state => state.productReducer.detail);
-
+    useEffect(() => {
+        if (id) dispatch(detailAction(id))
+        console.clear()
+    }, [id]);
     let mainImag = productDataDetail?.ProductImages?.slice(0, 1).map((item) => {
         return item.image
     })[0]
 
     const [images, setImages] = useState(mainImag)
-
-    let {id} = useParams();
-
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        if (id) dispatch(detailAction(id))
-        console.clear()
-    }, [id]);
 
     function MyVerticallyCenteredModal(props) {
         return (
@@ -61,11 +56,6 @@ const Detail = () => {
         );
     }
 
-    const styles = {
-        player: {
-            width: '800px',
-        },
-    }
     return (
         <div>
             <Container>
@@ -73,11 +63,13 @@ const Detail = () => {
                     <Col lg={5} md={12} xs={12}>
                         <div className={css.divImageMain}>
                             {
-                                images == undefined ? <img src={mainImag} alt=""/> : <img src={images} alt=""/>
+                                images == undefined ?
+                                    <img src={mainImag} alt="image"/> :
+                                    <img src={images} alt="image"/>
                             }
                             <div className={css.divImages}>
                                 {
-                                    productDataDetail?.ProductImages?.slice(1).map((item) => {
+                                    productDataDetail?.ProductImages?.map((item) => {
                                         return (
                                             <img key={item.id} src={item.image} alt="image"
                                                  onClick={() => setImages(item.image)}
@@ -115,12 +107,11 @@ const Detail = () => {
                     </Col>
                     <Col lg={12} xs={12} md={12}>
                         <div className={css.divVideo}>
-                            {/*<iframe width="560" height="315" src={productDataDetail.video}*/}
-                            {/*        title="YouTube video player" frameBorder="0"*/}
-                            {/*        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
-                            {/*        allowFullScreen></iframe>*/}
-                            <div className={css.video_slice} style={{display:"flex",justifyContent:"center",width:"100%"}}>
-                                <ReactPlayer url={productDataDetail.video} style={{display:"flex",justifyContent:"center"}} height={'315px'} playIcon={playBtn}  width={'100%'}/>
+                            <div className={css.video_slice}
+                                 style={{display: "flex", justifyContent: "center", width: "100%"}}>
+                                <ReactPlayer url={productDataDetail.video}
+                                             style={{display: "flex", justifyContent: "center"}} height={'315px'}
+                                             width={'100%'}/>
                             </div>
                         </div>
                     </Col>

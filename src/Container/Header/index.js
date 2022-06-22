@@ -8,18 +8,16 @@ import logo from "../../Images/logo.png"
 const Header = () => {
     const [closeNav, setCloseNav] = useState(false)
     const {t} = useTranslation()
-
     const {pathname} = useLocation();
     const {id} = useParams();
 
     const clickToUp = () => {
         setCloseNav(false)
         window.scrollTo({
-            top: 0, behavior: 'smooth' // for smoothly scrolling
+            top: 0, behavior: 'smooth'
         });
         console.clear()
     }
-
 
     return (<div className={css.mainDiv}>
             <Navbar collapseOnSelect expand="lg" variant="dark" expanded={closeNav}>
@@ -52,10 +50,6 @@ const Header = () => {
                                   className={`${pathname == "/contact" ? css.linkMian : null}`}
                                   to="/contact">{t("contacts")}</Link>
                             <span className={css.borderMain}/>
-                            {/*<select className={css.selectMain}>*/}
-                            {/*    <option value="en">ENG</option>*/}
-                            {/*    <option value="ru">RUS</option>*/}
-                            {/*</select>*/}
                             <Languages/>
                         </Nav>
                     </Navbar.Collapse>
