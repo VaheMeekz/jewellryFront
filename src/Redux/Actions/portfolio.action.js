@@ -9,7 +9,6 @@ export const portfolio_get = (page,limit) => {
                 dispatch({type: PORTFOLIO_GET, payload: response.data})
                 })
             .catch(function (error) {
-                // handle error
                 console.log(error);
             })
     }
@@ -22,7 +21,6 @@ export const portfolio_banner_get = () => {
                 dispatch({type: PORTFOLIO_BANNER_GET, payload: response.data})
             })
             .catch(function (error) {
-                // handle error
                 console.log(error);
             })
     }

@@ -8,10 +8,8 @@ import {useTranslation} from "react-i18next";
 
 const BriliantBg = () => {
     const {t} = useTranslation()
-    const homeFooterData = useSelector(state => state.homeReducer.homeFooter);
-
     const dispatch = useDispatch();
-
+    const homeFooterData = useSelector(state => state.homeReducer.homeFooter);
     useEffect(() => {
         dispatch(home_footer_get());
         console.clear()

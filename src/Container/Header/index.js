@@ -6,6 +6,7 @@ import Languages from "./Languages";
 import {useTranslation} from "react-i18next";
 import logo from "../../Images/logo.png"
 const Header = () => {
+
     const [closeNav, setCloseNav] = useState(false)
     const {t} = useTranslation()
     const {pathname} = useLocation();

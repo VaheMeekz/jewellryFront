@@ -15,12 +15,10 @@ import {contact_get} from "../../Redux/Actions/home.action";
 import {useTranslation} from "react-i18next";
 
 const Contact = () => {
-
-    const [modalShow, setModalShow] = React.useState(false);
     const {t} = useTranslation()
-    const dataContact = useSelector(state => state.homeReducer.contactData);
-
     const dispatch = useDispatch();
+    const [modalShow, setModalShow] = React.useState(false);
+    const dataContact = useSelector(state => state.homeReducer.contactData);
 
     useEffect(() => {
        dispatch(contact_get())

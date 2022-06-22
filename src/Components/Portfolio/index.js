@@ -8,17 +8,13 @@ import {MdOutlineKeyboardArrowRight} from 'react-icons/md';
 import {MdOutlineKeyboardArrowLeft} from 'react-icons/md';
 import ReactPlayer from "react-player"
 const Portfolio = () => {
-
+    const limit = 7;
+    const dispatch = useDispatch();
     const [page, setPage] = useState(0);
     const [pages, setPages] = useState([]);
-
     const mainData = useSelector(state => state.portfolioReducer.data);
     const count = useSelector(state => state.portfolioReducer.count);
     const videoImg = useSelector(state => state.portfolioReducer.videoImg);
-
-    const limit = 7;
-
-    const dispatch = useDispatch();
 
     useEffect(() => {
         if (count) {

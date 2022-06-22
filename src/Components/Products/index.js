@@ -11,9 +11,9 @@ import {makeArray} from "../../Config/keys";
 import {useTranslation} from "react-i18next";
 
 const Products = () => {
+    const limit = 8;
     const {t} = useTranslation()
     const dispatch = useDispatch();
-    const limit = 8;
     const [idMain, setIdMain] = useState();
     const [page, setPage] = useState(0);
     const [pages, setPages] = useState([]);

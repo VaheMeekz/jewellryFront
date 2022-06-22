@@ -8,10 +8,10 @@ import {useTranslation} from "react-i18next";
 
 
 const Footer = () => {
-    const dataContact = useSelector(state => state.homeReducer.contactData);
     const {t} = useTranslation()
     const dispatch = useDispatch();
     const year = new Date().getFullYear()
+    const dataContact = useSelector(state => state.homeReducer.contactData);
 
     useEffect(() => {
         dispatch(contact_get())

@@ -20,7 +20,6 @@ const About = () => {
         console.clear()
     }, []);
 
-
     return (
         <div>
             <Container>
