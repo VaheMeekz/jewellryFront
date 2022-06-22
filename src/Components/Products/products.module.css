@@ -74,3 +74,7 @@
     border-top: 2px solid #C4C4C4;
     margin: 2rem 0;
 }
+
+.zIndex {
+    z-index: 100 !important;
+}

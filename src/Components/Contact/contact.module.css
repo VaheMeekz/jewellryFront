@@ -199,11 +199,13 @@
     width: 100%;
     height: 15rem;
     margin: 10rem 0 2rem 0;
+    z-index: 100 !important;
 }
 
 .mapMain iframe {
     width: 100%;
     height: 100%;
+    z-index: 100 !important;
 }
 
 @media(max-width: 650px) {

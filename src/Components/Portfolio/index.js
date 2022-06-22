@@ -31,40 +31,40 @@ const Portfolio = () => {
     return (
         <div className={css.main}>
             <Container>
-                <Row className="justify-content-md-center">
+                <Row className={`justify-content-md-center ${css.zIndex}`}>
                     {
                         mainData?.slice(0, 3).map((item) => {
                             return (
                                 <Col lg={4} md={6} xs={12} key={item.id}>
                                     <div className={css.videoDiv}>
-                                        <ReactPlayer url={item.video}/>
+                                        <ReactPlayer url={item.video} style={{zIndex:"100"}}/>
                                     </div>
                                 </Col>
                             )
                         })
                     }
                 </Row>
-                <Row className="justify-content-md-center">
+                <Row className={`justify-content-md-center ${css.zIndex}`}>
                     <Col lg={12} xs={12} md={12}>
                         <div className={css.videoImgDiv}>
                             <img src={videoImg[0]?.image} alt=""/>
                         </div>
                     </Col>
                 </Row>
-                <Row className="justify-content-md-center">
+                <Row className={`justify-content-md-center ${css.zIndex}`}>
                     {
                         mainData?.slice(3).map((item) => {
                             return (
                                 <Col lg={6} md={6} xs={12} key={item.id}>
                                     <div className={css.videoDiv2}>
-                                        <ReactPlayer url={item.video}/>
+                                        <ReactPlayer url={item.video} style={{zIndex:"100"}}/>
                                     </div>
                                 </Col>
                             )
                         })
                     }
                 </Row>
-                <Row>
+                <Row className={`${css.zIndex}`}>
                     <Col>
                         {
                             mainData?.length < 5 ? null : (

@@ -21,30 +21,30 @@ const About = () => {
     }, []);
 
     return (
-        <div>
+        <div className={css.zIndex}>
             <Container>
                 <Briliant/>
-                <Row>
-                    <Col lg={12} md={12} xs={12}>
+                <Row className={css.zIndex}>
+                    <Col  className={css.zIndex} lg={12} md={12} xs={12}>
                         <div className={css.aboutTitle}>
                             <h1>{t("about")}</h1>
                         </div>
                     </Col>
                 </Row>
-                <Row>
-                    <Col lg={6} md={12} xs={12}>
+                <Row className={css.zIndex}>
+                    <Col  className={css.zIndex} lg={6} md={12} xs={12}>
                         {
                             aboutUpDataMain?.map((item) => {
                                 return (
                                     <div className={css.divImages} key={item.id}>
-                                        <img src={item.imgOne} alt="" className={css.imageOne}/>
+                                        <img src={item.imgOne} alt="image" className={css.imageOne}/>
                                         <img src={item.imgTwo} className={css.imageTwoo} alt=""/>
                                     </div>
                                 )
                             })
                         }
                     </Col>
-                    <Col lg={6} md={12} xs={12}>
+                    <Col className={css.zIndex} lg={6} md={12} xs={12}>
                         {
                             aboutUpDataMain?.map((item) => {
                                 return (
@@ -58,8 +58,8 @@ const About = () => {
                         }
                     </Col>
                 </Row>
-                <Row>
-                    <Col lg={6} md={12} xs={12}>
+                <Row className={css.zIndex}>
+                    <Col  className={css.zIndex} lg={6} md={12} xs={12}>
                         {
                             aboutDownDataMain?.map((item) => {
                                 return (
@@ -72,7 +72,7 @@ const About = () => {
                             })
                         }
                     </Col>
-                    <Col lg={6} md={12} xs={12}>
+                    <Col  className={css.zIndex} lg={6} md={12} xs={12}>
                         <div className={css.divDownMain}>
                             {
                                 aboutDownDataMain?.map((item) => {

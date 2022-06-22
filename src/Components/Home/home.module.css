@@ -387,5 +387,17 @@
 
 .homeBox{
     padding: 20px 0;
+    z-index: 100 !important;
 }
 
+
+.particles {
+    z-index: -100 !important;
+}
+.all {
+    z-index: 100 !important;
+}
+
+.zIndex {
+    z-index: 100 !important;
+}

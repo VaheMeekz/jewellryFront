@@ -7,7 +7,7 @@ import {useTranslation} from "react-i18next";
 const ProductItem = ({item}) => {
     const {t} = useTranslation()
     return (
-        <Col lg={3} md={6} xs={12} className='mt-4'>
+        <Col lg={3} md={6} xs={12} className={`${css.zIndex} mt-4`}>
             <div className={css.itemDiv}>
                 <div>
                     <img src={item.ProductImages[0]?.image} alt="image"/>

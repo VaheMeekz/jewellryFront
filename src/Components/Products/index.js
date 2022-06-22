@@ -42,7 +42,7 @@ const Products = () => {
         <div>
             <Briliant/>
             <Container>
-                <Row>
+                <Row className={css.zIndex}>
 
                     <Col lg={12} md={12} xs={12}>
                         <div className={css.productTitle}>
@@ -50,7 +50,7 @@ const Products = () => {
                         </div>
                     </Col>
                 </Row>
-                <Row className="justify-content-md-center">
+                <Row className={css.zIndex} className="justify-content-md-center">
                     {
                         categoriesDataMain?.map((item) => {
                             return (
@@ -67,14 +67,14 @@ const Products = () => {
                     }
                 </Row>
                 <div className={css.border}/>
-                <Row>
+                <Row className={css.zIndex}>
                     {
                         productData?.map((item) => {
                             return <ProductItem item={item} key={item.id}/>
                         })
                     }
                 </Row>
-                <Row>
+                <Row className={css.zIndex}>
                     <Col>
                         {
                            <div className="pagBox">

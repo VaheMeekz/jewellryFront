@@ -59,8 +59,8 @@ const Detail = () => {
     return (
         <div>
             <Container>
-                <Row className="justify-content-md-center">
-                    <Col lg={5} md={12} xs={12}>
+                <Row className={`${css.zIndex} justify-content-md-center`}>
+                    <Col className={css.zIndex} lg={5} md={12} xs={12}>
                         <div className={css.divImageMain}>
                             {
                                 images == undefined ?
@@ -110,7 +110,7 @@ const Detail = () => {
                             <div className={css.video_slice}
                                  style={{display: "flex", justifyContent: "center", width: "100%"}}>
                                 <ReactPlayer url={productDataDetail.video}
-                                             style={{display: "flex", justifyContent: "center"}} height={'315px'}
+                                             style={{display: "flex", justifyContent: "center",zIndex:"100"}} height={'315px'}
                                              width={'100%'}/>
                             </div>
                         </div>
@@ -200,7 +200,7 @@ const Detail = () => {
                                                 onBlur={handleBlur}
                                                 value={values.textOne}
                                                 placeholder={t("message")}
-                                                className={css.inpRew}
+                                                className={`${css.inpRew} ${css.zIndex}`}
                                             />
                                             {errors.textOne && touched.textOne && errors.textOne}
                                             <div className={css.btnDiv}>

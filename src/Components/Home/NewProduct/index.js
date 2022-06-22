@@ -17,7 +17,7 @@ const NewProduct = ({data}) => {
         console.clear()
     }, []);
     return (
-        <Row className="justify-content-md-center">
+        <Row className={`${css.zIndex} justify-content-md-center`}>
             {
                 data && data?.map((item) => {
                     return (
