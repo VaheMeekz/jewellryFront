@@ -3,7 +3,7 @@
   "about": "ABOUT US",
   "contacts": "CONTACTS",
   "products" : "PRODUCTS",
-  "portfolio": "PORTFOLIO",
+  "portfolio": "VIDEO REND",
   "address": "Address",
   "phone": "Phone",
   "email": "Email",
@@ -28,5 +28,8 @@
   "delivery": "Orders are placed within one day",
   "success": "Success",
   "close": "Close",
-  "colections": "POPULAR COLLECTIONS"
+  "colections": "POPULAR COLLECTIONS",
+  "rend": "PORTFOLIO",
+  "image": "IMAGE",
+  "video": "Video"
 }

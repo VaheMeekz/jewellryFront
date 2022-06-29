@@ -20,9 +20,15 @@ const routesMain = [
         exact: true
     },
     {
+        title: "Video Rend",
+        path: "/videoRend",
+        component: lazy(() => import('../Components/Portfolio/index')),
+        exact: true
+    },
+    {
         title: "Portfolio",
         path: "/portfolio",
-        component: lazy(() => import('../Components/Portfolio/index')),
+        component: lazy(() => import('../Components/Rend/Rend')),
         exact: true
     },
     {

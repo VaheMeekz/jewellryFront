@@ -3,7 +3,7 @@ import Briliant from "../Briliant";
 import {Col, Container, Row} from "react-bootstrap";
 import css from './products.module.css';
 import {useDispatch, useSelector} from "react-redux";
-import { product_category_get, product_get} from "../../Redux/Actions/product.action";
+import {product_category_get, product_get, productTextAC} from "../../Redux/Actions/product.action";
 import ProductItem from "../ProductItem";
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md';
 import {MdOutlineKeyboardArrowLeft} from 'react-icons/md';
@@ -19,6 +19,7 @@ const Products = () => {
     const [pages, setPages] = useState([]);
     const productData = useSelector(state => state.productReducer.products);
     const categoriesDataMain = useSelector(state => state.productReducer.categories);
+    const text = useSelector(state => state.productReducer.text);
     const count = useSelector(state => state.productReducer.count);
 
     useEffect(() => {
@@ -31,8 +32,8 @@ const Products = () => {
     useEffect(() => {
         dispatch(product_get(page, limit));
         dispatch(product_category_get());
+        dispatch(productTextAC())
     }, [page]);
-
     const filterData = (id) => {
         dispatch(product_get(id));
         setIdMain(id);
@@ -47,6 +48,9 @@ const Products = () => {
                     <Col lg={12} md={12} xs={12}>
                         <div className={css.productTitle}>
                             <h1>{t("products")}</h1>
+                            <p>{localStorage.getItem("lang") == "am" && text?.textHy}</p>
+                            <p>{localStorage.getItem("lang") == "ru" && text?.textRu}</p>
+                            <p>{localStorage.getItem("lang") == "en" && text?.textEn}</p>
                         </div>
                     </Col>
                 </Row>

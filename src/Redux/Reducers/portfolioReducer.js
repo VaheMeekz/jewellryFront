@@ -1,4 +1,4 @@
-import {PORTFOLIO_BANNER_GET, PORTFOLIO_GET} from "../types";
+ import {PORTFOLIO_BANNER_GET, PORTFOLIO_GET} from "../types";
 
 const initialState = {
     data: [],

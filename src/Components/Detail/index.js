@@ -19,6 +19,8 @@ const Detail = () => {
     let {id} = useParams();
     const dispatch = useDispatch();
     const [modalShow, setModalShow] = React.useState(false);
+    const [openImage,setOpenImage] = useState(false)
+    const [modalImage,setModalImage] = useState(null)
     const productDataDetail = useSelector(state => state.productReducer.detail);
     useEffect(() => {
         if (id) dispatch(detailAction(id))
@@ -64,15 +66,25 @@ const Detail = () => {
                         <div className={css.divImageMain}>
                             {
                                 images == undefined ?
-                                    <img src={mainImag} alt="image"/> :
-                                    <img src={images} alt="image"/>
+                                    <img src={mainImag} alt="image" onClick={()=> {
+                                        setModalImage(mainImag);
+                                        setOpenImage(true)
+                                    }}/> :
+                                    <img src={images} alt="image" onClick={()=> {
+                                        setModalImage(mainImag);
+                                        setOpenImage(true)
+                                    }}/>
                             }
                             <div className={css.divImages}>
                                 {
                                     productDataDetail?.ProductImages?.map((item) => {
                                         return (
                                             <img key={item.id} src={item.image} alt="image"
-                                                 onClick={() => setImages(item.image)}
+                                                 onClick={() => {
+                                                     setImages(item.image);
+                                                     setModalImage(item.image);
+                                                     setOpenImage(true)
+                                                 }}
                                             />
                                         )
                                     })
@@ -216,9 +228,31 @@ const Detail = () => {
                     </Col>
                 </Row>
             </Container>
+            <ImageModal
+                show={openImage}
+                onHide={() => setOpenImage(false)}
+                image={images}
+            />
             <BriliantBg/>
         </div>
     );
 };
+
+const ImageModal = (props) => {
+    return(
+        <Modal
+            {...props}
+            size="sm"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+        >
+            <Modal.Header closeButton>
+            </Modal.Header>
+            <Modal.Body>
+                <img src={props.image} alt="image" width={270} height={300}/>
+            </Modal.Body>
+        </Modal>
+    )
+}
 
 export default Detail;

@@ -2,7 +2,7 @@ import {
     PRODUCT_CATEGORY_GET,
     PRODUCT_DETAIL_GET,
     PRODUCT_GET,
-    PRODUCT_SLIDER
+    PRODUCT_SLIDER, PRODUCT_TEXT_GET
 } from "../types";
 import  axios  from 'axios';
 import {backUrl} from "../../Config/keys";
@@ -49,6 +49,18 @@ export const detailAction = (id) => {
         axios.get(`${backUrl}/api/v1/product/single`, {params: {id: id}})
             .then(function (response) {
                 dispatch({type: PRODUCT_DETAIL_GET, payload: response.data})
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
+    }
+}
+
+export const productTextAC = (id) => {
+    return dispatch => {
+        axios.get(`${backUrl}/api/v1/text`, )
+            .then(function (response) {
+                dispatch({type: PRODUCT_TEXT_GET, payload: response.data})
             })
             .catch(function (error) {
                 console.log(error);

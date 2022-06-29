@@ -4,7 +4,7 @@ import {
     PRODUCT_DETAIL_GET,
     PRODUCT_FILTER_GET,
     PRODUCT_GET,
-    PRODUCT_SLIDER
+    PRODUCT_SLIDER, PRODUCT_TEXT_GET
 } from "../types";
 
 const initialState = {
@@ -14,7 +14,8 @@ const initialState = {
     filtersItem: [],
     detail: [],
     categories: [],
-    count: null
+    count: null,
+    text:null
 }
 
 export const productReducer = (state = initialState, action) => {
@@ -49,7 +50,8 @@ export const productReducer = (state = initialState, action) => {
         case PRODUCT_CATEGORY_GET:
 
             return {...state, categories: action.payload}
-
+        case PRODUCT_TEXT_GET:
+            return {...state,text: action.payload}
         default:
             return state;
     }

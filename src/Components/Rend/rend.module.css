@@ -1,0 +1,7 @@
+.meekz{
+    flex-direction: column !important;
+}
+
+.meekz div img {
+    height: 200px !important;
+}

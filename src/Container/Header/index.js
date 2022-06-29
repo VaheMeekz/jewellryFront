@@ -45,8 +45,11 @@ const Header = () => {
                                   className={`${pathname == "/products" || pathname == `/product/${id}` ? css.linkMian : null}`}
                                   to="/products">{t("products")}</Link>
                             <Link onClick={clickToUp}
+                                  className={`${pathname == "/videoRend" ? css.linkMian : null}`}
+                                  to="/videoRend">{t("portfolio")}</Link>
+                            <Link onClick={clickToUp}
                                   className={`${pathname == "/portfolio" ? css.linkMian : null}`}
-                                  to="/portfolio">{t("portfolio")}</Link>
+                                  to="/portfolio">{t('rend')}</Link>
                             <Link onClick={clickToUp}
                                   className={`${pathname == "/contact" ? css.linkMian : null}`}
                                   to="/contact">{t("contacts")}</Link>
